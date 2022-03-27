@@ -19,7 +19,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
   s.connect((IP, PORT))
-  print("Sending payload . . .")
+  print("Sending payloads . . . .")
   s.send(bytes(buffer + "\r\n", "latin-1"))
   print("Done!")
 except:

